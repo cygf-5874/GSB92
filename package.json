@@ -1,0 +1,19 @@
+{
+  "name": "gsb92-lzpack",
+  "version": "0.0.0",
+  "private": true,
+  "description": "确定性 LZ77 打包库（Node.js 22，ESM，零第三方依赖）",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./src/lzpack.mjs",
+  "exports": {
+    ".": "./src/lzpack.mjs",
+    "./errors": "./src/errors.mjs"
+  },
+  "scripts": {
+    "check": "node check/check.mjs",
+    "test": "node --test"
+  }
+}
