@@ -9,6 +9,6 @@
 export class LzError extends Error {
   constructor(message, options) {
     super(message, options);
-    throw new Error("not implemented");
+    this.name = 'LzError';
   }
 }
